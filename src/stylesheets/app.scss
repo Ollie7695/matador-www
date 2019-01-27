@@ -1,0 +1,98 @@
+$color-text-dark: 					#34374C;
+$color-text: 						#999BA5;
+$color-lightest:					#F6F8FA;
+
+$foundation-palette: (
+	primary: 						#004DFF,
+	secondary: 						#31E6F9,
+	success: 						#3adb76,
+	warning: 						#ffae00,
+	alert: 							#ff3d55,
+);
+
+$transition-time: .2s;
+
+$body-font-family: 					"Graphik";
+$header-font-family: 				"Graphik Compact";
+$header-font-weight:				bold;
+$font-weight-medium:				500;
+$lead-font-size: 					1.375rem;
+$lead-lineheight: 					2rem;
+$header-styles: (
+	small: (
+		'h1': ('font-size': 35, 'lh': 35, 'mb': 15),
+		'h2': ('font-size': 26, 'lh': 48, 'mb': 20),
+		'h3': ('font-size': 24, 'lh': 32, 'mb': 10),
+		'h5': ('font-size': 17, 'lh': 24)
+	),
+	// medium: (),
+	large: (
+		'h1': ('font-size': 70, 'lh': 70, 'mb': 22),
+		'h2': ('font-size': 40, 'lh': 48, 'mb': 20),
+		'h3': ('font-size': 26, 'lh': 32, 'mb': 10),
+		'h5': ('font-size': 16, 'lh': 24)
+	)
+);
+
+$button-radius:						28px;
+
+@import "mixins/fonts";
+
+@include font-face($body-font-family, "../fonts/Graphik-Regular", normal, normal);
+@include font-face($body-font-family, "../fonts/Graphik-Medium", 500, normal);
+@include font-face($header-font-family, "../fonts/GraphikCompact-Bold", $header-font-weight, normal);
+@include font-face($header-font-family, "../fonts/GraphikCompact-Regular", normal, normal);
+
+@import "foundation-sites/scss/foundation";
+
+$header-color: $primary-color;
+
+@include foundation-everything;
+
+::selection {
+	background: $primary-color;
+	color: white;
+}
+
+html {
+	font-size: 16px;
+}
+
+@include breakpoint(small down) {
+	html {
+		font-size: 86%;
+	}
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-smoothing: always;
+	text-rendering: optimizeLegibility;
+	color: $color-text-dark;
+	overflow-x: hidden;
+	font-size: 1rem;
+}
+
+.wrapper {
+	overflow-x: hidden;
+}
+
+img {
+	user-select: none;
+}
+
+@import "components/typography";
+@import "components/button";
+@import "components/card";
+@import "components/form";
+
+@import "modules/header";
+@import "modules/masthead";
+@import "modules/footer";
+@import "modules/reveal";
+
+@import "pages/index";
+@import "pages/legal";

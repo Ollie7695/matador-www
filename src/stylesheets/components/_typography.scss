@@ -1,0 +1,11 @@
+p {
+	color: $color-text;
+	@include breakpoint(medium up) {
+		line-height: rem-calc(30);
+	}
+}
+
+a {
+	transition: all $transition-time ease;
+	outline: none;
+}

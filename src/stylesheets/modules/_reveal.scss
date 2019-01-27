@@ -1,0 +1,32 @@
+.reveal {
+	outline: none;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 rem-calc(12) rem-calc(34) rgba(black, .1);
+	@include breakpoint(medium up) {
+		padding: 3rem;
+		border-radius: rem-calc(8);
+	}
+	a {
+		color: $primary-color;
+	}
+	h3 {
+		margin-bottom: 20px;
+	}
+	p {
+		&.is-small {
+			font-size: .85rem;
+			line-height: 1.45rem;
+		}
+	}
+}
+
+.reveal-overlay {
+	background-color: rgba($color-text-dark, .4);
+}
+
+.close-button {
+	outline: none;
+}

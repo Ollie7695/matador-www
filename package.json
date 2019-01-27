@@ -1,0 +1,14 @@
+{
+  "name": "Matador",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ollie",
+  "license": "MIT",
+  "homepage": "https://ollie7695.github.io/matador-www",
+  "dependencies": {
+    "blendid": "^4.4.3",
+    "foundation-sites": "^6.5.2",
+    "gsap": "^2.0.2",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,119 @@
+.footer {
+	background-color: $color-lightest;
+	padding: rem-calc(120) 0 rem-calc(20);
+	margin-top: rem-calc(180);
+	position: relative;
+	p, a {
+		line-height: rem-calc(18);
+		font-size: rem-calc(12);
+		color: $color-text;
+		margin: 0;
+	}
+
+	svg {
+		color: $primary-color;
+	}
+
+	.feed {
+		position: relative;
+		margin: 0 auto;
+		display: block;
+		max-width: 375px;
+		top: -100px;
+		@include breakpoint(medium down) {
+			margin: 0 auto -130px;
+			top: -150px;
+		}
+		video {
+			margin: 0 auto;
+			display: block;
+			max-width: 100%;
+		}
+		.gif {
+			position: absolute;
+			max-width: 375px;
+		}
+		.decor {
+			position: absolute;
+			max-width: 500px;
+			width: 500px;
+			bottom: 2rem;
+			left: -3rem;
+		}
+		@include breakpoint(medium up) {
+			img {
+				display: flex;
+			}
+		}
+	}
+
+	.download {
+		margin-bottom: rem-calc(40);
+	}
+
+	.card {
+		margin-bottom: 1rem;
+		.card-section {
+			@include flex;
+			.rhs {
+				margin-left: rem-calc(10);
+				justify-content: flex-end;
+				align-items: center;
+				flex: inherit;
+				@include flex;
+			}
+			.button, a {
+				@include flex;
+				margin: 0;
+			}
+		}
+	}
+
+	.social {
+		margin-bottom: rem-calc(30);
+	}
+
+	nav {
+		margin-top: rem-calc(10);
+		font-weight: $font-weight-medium;
+		a {
+			margin: 0 .3rem;
+		}
+	}
+
+	.curve {
+		position: absolute;
+		max-width: calc(100% + 8px);
+		width: calc(100% + 8px);
+		left: -4px;
+		right: 0;
+		top: -2px;
+	}
+
+	.links {
+		padding: rem-calc(50) 0;
+	}
+
+	.secondary {
+		p, a {
+			color: rgba($color-text, .6);
+		}
+		p {
+			margin: 0 0 1rem;
+		}
+	}
+
+	@include breakpoint(medium up) {
+		padding: rem-calc(100) 0;
+		.links {
+			padding: rem-calc(100) 0;
+		}
+	}
+
+	@include breakpoint(large up) {
+		.card {
+			margin-bottom: 0;
+			height: 100%;
+		}
+	}
+}

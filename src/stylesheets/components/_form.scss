@@ -1,0 +1,22 @@
+input[type="text"] {
+	font-family: $header-font-family;
+	font-weight: bold;
+	outline: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border-radius: rem-calc(34);
+	height: 68px;
+	padding: rem-calc(24);
+	border-color: $color-text;
+	&:focus, &:active {
+		border-color: $primary-color;
+		box-shadow: none;
+	}
+}
+
+form {
+	margin-top: rem-calc(10);
+	input[type="submit"] {
+		margin-top: rem-calc(10);
+	}
+}

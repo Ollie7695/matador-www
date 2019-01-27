@@ -1,0 +1,19 @@
+.legal-links {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	a {
+		color: $primary-color;
+		margin-bottom: rem-calc(5);
+		font-weight: 500;
+		display: block;
+	}
+
+	@include breakpoint(medium up) {
+		a {
+			margin-bottom: rem-calc(15);
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.header {
+	padding: rem-calc(20) 0 0;
+	position: relative;
+	z-index: 3;
+	.grid-container {
+		@include flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		img {
+			height: 20px;
+		}
+	}
+
+	nav {
+		font-family: $header-font-family;
+		display: none;
+
+		a {
+			margin-left: rem-calc(40);
+			display: inline-flex;
+			align-items: center;
+			svg {
+				margin-right: .3rem;
+			}
+		}
+	}
+
+	@include breakpoint(medium up) {
+		padding: rem-calc(50) 0 0;
+		.logo {
+			img {
+				height: 26px;
+			}
+		}
+
+		nav {
+			display: flex;
+		}
+	}
+}

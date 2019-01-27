@@ -1,0 +1,59 @@
+.masthead {
+	padding: rem-calc(60) 0 rem-calc(120);
+	background-image: 	url("../images/masthead-curve.svg"),
+						linear-gradient(360deg, $color-lightest 4.58%, white 100%);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 105%;
+	text-align: center;
+	.grid-x {
+		position: relative;
+	}
+
+	p {
+		&.lead {
+			color: rgba($primary-color, .8);
+			line-height: $lead-lineheight;
+			font-size: $lead-font-size;
+			margin-bottom: rem-calc(30);
+		}
+	}
+
+	img {
+		max-height: 652px;
+		position: relative;
+		z-index: 2;
+	}
+
+	a img {
+		width: 140px;
+	}
+
+	.decor {
+		position: absolute;
+		max-width: 1000px;
+		max-height: 585px;
+		left: calc((1920px / 2) - 50%);
+		z-index: 1;
+		top: -4rem;
+		@include breakpoint(medium down) {
+			display: none;
+		}
+	}
+
+	.stripes {
+		position: absolute;
+		max-height: 800px;
+		left: calc((2000px / 2) - 50%);
+		z-index: 0;
+		top: -14rem;
+	}
+
+	@include breakpoint(medium up) {
+		padding: rem-calc(50) 0 rem-calc(100);
+		text-align: left;
+		a img {
+			width: 200px;
+		}
+	}
+}
