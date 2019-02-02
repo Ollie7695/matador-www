@@ -13,8 +13,8 @@
 	p {
 		&.lead {
 			color: rgba($primary-color, .8);
-			line-height: $lead-lineheight;
-			font-size: $lead-font-size;
+			line-height: rem-calc(26);
+			font-size: rem-calc(18);
 			margin-bottom: rem-calc(30);
 		}
 	}
@@ -49,11 +49,25 @@
 		top: -14rem;
 	}
 
+	.mobile-mockup {
+		margin-top: rem-calc(80);
+		max-width: 350px;
+	}
+
 	@include breakpoint(medium up) {
 		padding: rem-calc(50) 0 rem-calc(100);
 		text-align: left;
 		a img {
 			width: 200px;
+		}
+	}
+
+	@include breakpoint(large up) {
+		p {
+			&.lead {
+				line-height: $lead-lineheight;
+				font-size: $lead-font-size;
+			}
 		}
 	}
 }

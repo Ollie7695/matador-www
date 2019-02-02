@@ -1,23 +1,24 @@
 {% extends 'layouts/application.html' %}
-{% set title = "Matador • Investing, made easy-peasy." %}
+{% set title = "Matador • Stocks, made friendly." %}
 
 {% block content %}
 <div class="masthead">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-middle">
-			<div class="cell medium-5 large-5 content">
-				<h1 style="opacity:0">Investing, made easy-peasy.</h1>
-				<p class="lead" style="opacity:0">Matador makes investing friendly, free of fees and community-powered. 🤜🤛</p>
+			<div class="cell medium-5 large-6 content">
+				<h1 style="opacity:0">Stocks, made friendly.</h1>
+				<p class="lead" style="opacity:0">Matador gives you the power of community, so you’re more empowered when you invest in the stock market. It’s friendly, easy, and free.</p>
 				
 				<a href="https://itunes.apple.com/us/app/matador-stock-trading/id1204112719?mt=8">
 					<img src="images/appstore.svg" draggable="false" style="opacity:0">
 				</a>
 			</div>
 
-			<div class="cell small-12 medium-7 large-6 large-offset-1">
+			<div class="cell small-12 medium-7 large-6">
+				<img src="images/masthead-mockup-mobile.png" class="mobile-mockup show-for-small-only" draggable="false">
 				<img src="images/masthead-mockup.png" class="hide-for-small-only" draggable="false">
-				<img src="images/masthead-decor.svg" class="decor" draggable="false">
-				<img src="images/masthead-stripes.svg" class="stripes" draggable="false">
+				<img src="images/masthead-decor.svg" class="hide-for-small-only decor" draggable="false">
+				<img src="images/masthead-stripes.svg" class="hide-for-small-only stripes" draggable="false">
 			</div>
 		</div>
 	</div>
@@ -28,21 +29,21 @@
 		<div class="card-section">
 			<div class="grid-x grid-padding-x align-center text-center">
 				<div class="cell medium-4">
-					<img src="images/friends.svg" alt="No Stock Market Scaries" draggable="false">
-					<h3>No Stock Market Scaries</h3>
-					<p>Bring your squad onto Matador to discuss investments and invest as a group, instead of an isolated experience.</p>
+					<img src="images/friends.svg" alt="Friendly: #SquadGoals" draggable="false">
+					<h3>Friendly: #SquadGoals</h3>
+					<p>Things suck in isolation. That’s why Matador is bringing the power of community to investing. Discuss, learn, and invest with people you trust.</p>
 				</div>
 
 				<div class="cell medium-4">
-					<img src="images/free.svg" alt="No minimums. No fees." draggable="false">
-					<h3>No minimums. No fees.</h3>
-					<p>Start with whatever amount of money you’re comfortable with! Make as many trades as you want, and deposit or withdraw whenever you need to.</p>
+					<img src="images/easy.svg" alt="Easy: #Beliefs" draggable="false">
+					<h3>Easy: #Beliefs</h3>
+					<p>Matador makes it easy to learn, follow, and invest in the things you believe are worth it. From cannabis and tech to tried-and-true industries, Matador has you covered with curated investing themes that make it easy to get going.</p>
 				</div>
 
 				<div class="cell medium-4">
-					<img src="images/secure.svg" alt="Bank-level security" draggable="false">
-					<h3>Bank-level security</h3>
-					<p>We don’t just meet traditional baking security standards – we exceed them. And since we’re a member of SIPC, you’re protected up to $500,000.</p>
+					<img src="images/free.svg" alt="Easy: #Beliefs" draggable="false">
+					<h3>Free: #YepFree</h3>
+					<p>Unlike other apps, Matador is really-for-real free. We’re not skimming off your portfolio, and we don’t charge you for trading. We’re working on a community-powered revenue stream, but we’ll be super transparent when that’s in place.</p>
 				</div>
 			</div>
 		</div>
@@ -52,9 +53,9 @@
 		<div class="cell">
 			<div class="card">
 				<div class="card-section">
-					<img src="images/friends.svg" alt="No Stock Market Scaries" draggable="false">
-					<h3>No Stock Market Scaries</h3>
-					<p>Bring your squad onto Matador to discuss investments and invest as a group, instead of an isolated experience.</p>
+					<img src="images/friends.svg" alt="Friendly: #SquadGoals" draggable="false">
+					<h3>Friendly: #SquadGoals</h3>
+					<p>Things suck in isolation. That’s why Matador is bringing the power of community to investing. Discuss, learn, and invest with people you trust.</p>
 				</div>
 			</div>
 		</div>
@@ -62,9 +63,9 @@
 		<div class="cell">
 			<div class="card">
 				<div class="card-section">
-					<img src="images/free.svg" alt="No minimums. No fees." draggable="false">
-					<h3>No minimums. No fees.</h3>
-					<p>Start with whatever amount of money you’re comfortable with! Make as many trades as you want, and deposit or withdraw whenever you need to.</p>
+					<img src="images/easy.svg" alt="Easy: #Beliefs" draggable="false">
+					<h3>Easy: #Beliefs</h3>
+					<p>Matador makes it easy to learn, follow, and invest in the things you believe are worth it. From cannabis and tech to tried-and-true industries, Matador has you covered with curated investing themes that make it easy to get going.</p>
 				</div>
 			</div>
 		</div>
@@ -72,9 +73,19 @@
 		<div class="cell">
 			<div class="card">
 				<div class="card-section">
-					<img src="images/secure.svg" alt="Bank-level security" draggable="false">
-					<h3>Bank-level security</h3>
-					<p>We don’t just meet traditional baking security standards – we exceed them. And since we’re a member of SIPC, you’re protected up to $500,000.</p>
+					<img src="images/free.svg" alt="Free: #YepFree" draggable="false">
+					<h3>Free: #YepFree</h3>
+					<p>Unlike other apps, Matador is really-for-real free. We’re not skimming off your portfolio, and we don’t charge you for trading. We’re working on a community-powered revenue stream, but we’ll be super transparent when that’s in place.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<div class="card">
+				<div class="card-section">
+					<img src="images/secure.svg" alt="Bank Level Security" draggable="false">
+					<h3>Bank Level Security</h3>
+					<p>Since Matador is a member of SIPC, securities in your account are protected up to $500,000. We use bank-level security with AES 128-bit encryption and TLS 1.2 to secure data in transit. <span class="primary">TLDR: We not only meet traditional banking security standards – we exceed them.</span></p>
 				</div>
 			</div>
 		</div>
@@ -84,9 +95,8 @@
 <div class="grid-container community hide-for-small-only">
 	<div class="grid-x grid-padding-x align-center text-center">
 		<div class="cell small-11 medium-9 large-7">
-			<h2>Don't go at it alone.</h2>
-			<p>Investing can be scary and costly. We built Matador to make sure that confusion, hassle, and expensive fees don't get in the way of building a comfortable financial future.</p>
-			<p>Connect with friends to discover what companies they are investing in, and learn about which stocks are trending from the broader Matador community.</p>
+			<h2>On a mission to accelerate<br>all people’s prosperity.</h2>
+			<p>We’re not just an investing app. We’re a company on a mission to accelerate all people’s prosperity. Unlike other banking and investing apps, Matador helps you build relationships around finance so you can be more effective and knowledgeable in what you’re doing. We’re starting with the loneliest place in wealth creation and management: the stock market. But that’s not all you’ll see from us.</p>
 		</div>
 	</div>
 </div>

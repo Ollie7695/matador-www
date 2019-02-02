@@ -3,6 +3,9 @@ p {
 	@include breakpoint(medium up) {
 		line-height: rem-calc(30);
 	}
+	.primary {
+		color: $primary-color;
+	}
 }
 
 a {
