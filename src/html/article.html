@@ -5,7 +5,74 @@
 {% include "shared/header-blog.html" %}
 {% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+{% include "shared/scrolling-nav.html" %}
+
+<div class="grid-container article">
+	<div class="grid-x grid-padding-x featured is-padding">
+		<header class="columns cell small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center">
+			<h1>Nulla efficitur risus efficitur erat tincidunt, eu lobortis sapien accumsan</h1>
+
+			<div class="author">
+				<img src="https://matador.frb.io/images/users/jannick.png" alt="Jannick Malling" draggable="false">
+				<h5>Jannick Malling</h5>
+				<p>17 December, 2018</p>
+			</div>
+		</header>
+
+		<div class="cell small-12">
+			<img class="is-padding is-bottom" src="https://matador.frb.io/images/_2320xAUTO_crop_top-center_100_none/volutpat.png" alt="#" draggable="false">
+		</div>
+
+		<div class="cell small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+			<div class="text is-padding is-bottom">
+				<p>When we think of wellness, we often tend to look at it only in terms of our physical health. Yet wellness is so much more than that. It is a holistic approach to our overall wellbeing that encompasses the connection between mind, body and spirit. Wellness is inherent in what we do, feel, and think. Many of us think we are looking after ourselves because we workout regularly and for the most part eat well. What we fail to recognise are the strains we place on ourselves through stress, anxiety, overworking, over-exercising, crash dieting, not breathing properly, dehydration – the list goes on as we deplete.</p>
+				<p>Praesent a sapien sed lorem suscipit vestibulum eu ut dui. Sed consectetur, nibh id lobortis imperdiet, erat quam condimentum mauris, non dignissim metus quam id nisl. Duis erat massa, cursus a enim id, interdum rutrum enim. Nulla efficitur risus efficitur erat tincidunt, eu lobortis sapien accumsan.</p>
+				<p>Mauris ut orci convallis, molestie massa a, dapibus mi. Nam eu justo eu quam maximus ullamcorper in eget ipsum. Phasellus interdum, tellus in mollis ultricies, nibh metus aliquam lacus, quis interdum.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="seperator is-padding is-bottom text-center">
+		<svg width="22" height="22"><use xlink:href="images/icons.svg#seperator"></use></svg>
+	</div>
+	
+	<div class="grid-x grid-padding-x articles">
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/sapien.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Nam eu justo eu quam maximus ullamcorper in eget ipsum phasellus interdum</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/making-it-simple.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Changing the way people invest by making it simple</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/donec.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Donec arcu sem, dictum vitae tellus rutrum, mollis tempor justo</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
 
 {% block footer %}
 {% include "shared/footer-simple.html" %}

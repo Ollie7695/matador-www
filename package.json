@@ -9,6 +9,7 @@
     "blendid": "^4.4.3",
     "foundation-sites": "^6.5.2",
     "gsap": "^2.0.2",
+    "headroom.js": "^0.9.4",
     "jquery": "^3.3.1"
   }
 }
