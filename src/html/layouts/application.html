@@ -21,9 +21,15 @@
 	</head>
 	<body>
 		<div class="wrapper">
+			{% block header %}
 			{% include "shared/header.html" %}
+			{% endblock %}
+			
 			{% block content %}{% endblock %}
+			
+			{% block footer %}
 			{% include "shared/footer.html" %}
+			{% endblock %}
 		</div>
 
 		{% include "shared/modals.html" %}

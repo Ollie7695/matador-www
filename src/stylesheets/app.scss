@@ -21,7 +21,7 @@ $lead-lineheight: 					2rem;
 $header-styles: (
 	small: (
 		'h1': ('font-size': 35, 'lh': 35, 'mb': 15),
-		'h2': ('font-size': 26, 'lh': 48, 'mb': 20),
+		'h2': ('font-size': 26, 'lh': 32, 'mb': 20),
 		'h3': ('font-size': 24, 'lh': 32, 'mb': 10),
 		'h5': ('font-size': 17, 'lh': 24)
 	),
@@ -93,6 +93,8 @@ img {
 @import "modules/masthead";
 @import "modules/footer";
 @import "modules/reveal";
+@import "modules/padding";
 
 @import "pages/index";
 @import "pages/legal";
+@import "pages/blog";

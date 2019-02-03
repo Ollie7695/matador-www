@@ -8,7 +8,7 @@
 	}
 
 	.card-section {
-		padding: rem-calc(60) rem-calc(30);
+		padding: rem-calc(60) rem-calc(20);
 		.cell {
 			border-right: 2px solid $color-lightest;
 			padding: 0 rem-calc(51);
@@ -28,8 +28,8 @@
 	}
 
 	p {
-		font-size: rem-calc(14);
-		line-height: rem-calc(18);
+		line-height: rem-calc(24);
+		font-size: rem-calc(16);
 		margin: 0;
 	}
 
@@ -37,6 +37,11 @@
 		margin-top: rem-calc(-60);
 		.card {
 			margin-bottom: 0;
+		}
+
+		p {
+			font-size: rem-calc(14);
+			line-height: rem-calc(20);
 		}
 
 		img {

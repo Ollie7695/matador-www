@@ -1,0 +1,44 @@
+.is-padding {
+	padding: 3rem 0;
+	&.is-bottom {
+		padding-top: 0;
+	}
+	.is-padding-sm {
+		padding: 2rem 0;
+		&.is-bottom {
+			padding-top: 0;
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	.is-padding {
+		padding: 7rem 0;
+		&.is-bottom {
+			padding-top: 0;
+		}
+	}
+
+	.is-padding-sm {
+		padding: 4rem 0;
+		&.is-bottom {
+			padding-top: 0;
+		}
+	}
+}
+
+@include breakpoint(large) {
+	.is-padding {
+		padding: 10rem 0;
+		&.is-bottom {
+			padding-top: 0;
+		}
+	}
+
+	.is-padding-sm {
+		padding: 6rem 0;
+		&.is-bottom {
+			padding-top: 0;
+		}
+	}
+}

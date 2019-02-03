@@ -1,0 +1,49 @@
+.featured {
+	@include breakpoint(medium) {
+		position: relative;
+		.lhs {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+	h2 {
+		color: $color-text-dark;
+	}
+
+	h5 {
+		display: inline-flex;
+		align-items: center;
+	}
+}
+
+.seperator {
+	color: rgba($primary-color, .2);
+}
+
+.articles {
+	.card {
+		height: calc(100% - 2rem);
+		margin-bottom: 2rem;
+	}
+	h3 {
+		color: $color-text-dark;
+	}
+}
+
+.featured, .articles {
+	.card {
+		.card-section {
+			padding: rem-calc(2rem);
+		}
+	}
+}
+
+@include breakpoint(medium up) {
+	.articles {
+		.card {
+			height: calc(100% - 5rem);
+			margin-bottom: 5rem;
+		}
+	}
+}
