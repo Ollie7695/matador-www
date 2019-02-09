@@ -1,0 +1,97 @@
+{% extends 'layouts/application.html' %}
+{% set title = "Blog • Matador" %}
+
+{% block header %}
+{% include "shared/header-blog.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="grid-container">
+	<div class="grid-x grid-padding-x featured is-padding">
+		<div class="cell small-12 medium-11 medium-offset-1 large-10 large-offset-2">
+			<a href="article.html" title="#">
+				<img src="https://matador.frb.io/images/_1940xAUTO_crop_top-center_100_none/volutpat.png" alt="#" draggable="false">
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4 lhs">
+			<a href="article.html" title="#">
+				<div class="card">
+					<div class="card-section">
+						<h2>Nulla efficitur risus efficitur erat tincidunt, eu lobortis sapien accumsan</h2>
+						<h5>
+							Read more
+							<svg width="24" height="24"><use xlink:href="images/icons.svg#arrow-right"></use></svg>
+						</h5>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="seperator is-padding is-bottom text-center">
+		<svg width="22" height="22"><use xlink:href="images/icons.svg#seperator"></use></svg>
+	</div>
+
+	<div class="grid-x grid-padding-x articles">
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/sapien.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Nam eu justo eu quam maximus ullamcorper in eget ipsum phasellus interdum</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/making-it-simple.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Changing the way people invest by making it simple</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/donec.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Donec arcu sem, dictum vitae tellus rutrum, mollis tempor justo</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/venenatis.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Praesent consectetur luctus venenatis</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="cell small-12 medium-6 large-4">
+			<a href="article.html" title="#">
+				<div class="card">
+					<img src="https://matador.frb.io/images/_744x440_crop_top-center_100_none/fringilla.png" alt="#" draggable="false">
+					<div class="card-section">
+						<h3>Curabitur fringilla commodo sapien nec ullamcorper nunc dui tellus rutrum</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "shared/footer-simple.html" %}
+{% endblock %}

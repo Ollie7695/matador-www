@@ -63,7 +63,7 @@
 	}
 
 	.card-section {
-		padding: rem-calc(60) rem-calc(30);
+		padding: rem-calc(60) rem-calc(20);
 		.cell {
 			border-right: 2px solid $color-lightest;
 			padding: 0 rem-calc(51);
@@ -76,6 +76,12 @@
 	img {
 		margin-bottom: rem-calc(30);
 		max-width: 240px;
+	}
+
+	p {
+		line-height: rem-calc(24);
+		font-size: rem-calc(16);
+		margin: 0;
 	}
 
 	@include breakpoint(medium up) {
