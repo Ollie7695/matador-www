@@ -3,7 +3,7 @@
 	padding: rem-calc(120) 0 rem-calc(20);
 	margin-top: rem-calc(180);
 	position: relative;
-	p, a {
+	p:not(.is-normal), a {
 		line-height: rem-calc(18);
 		font-size: rem-calc(12);
 		color: $color-text;

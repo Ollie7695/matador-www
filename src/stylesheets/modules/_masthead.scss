@@ -4,7 +4,7 @@
 						linear-gradient(360deg, $color-lightest 4.58%, white 100%);
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: 105%;
+	background-size: 106%;
 	text-align: center;
 	.grid-x {
 		position: relative;
@@ -17,12 +17,6 @@
 			font-size: rem-calc(18);
 			margin-bottom: rem-calc(30);
 		}
-	}
-
-	img {
-		max-height: 652px;
-		position: relative;
-		z-index: 2;
 	}
 
 	a img {

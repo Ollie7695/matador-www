@@ -7,6 +7,7 @@
   "homepage": "https://ollie7695.github.io/matador-www",
   "dependencies": {
     "blendid": "^4.4.3",
+    "flickity": "^2.2.0",
     "foundation-sites": "^6.5.2",
     "gsap": "^2.0.2",
     "jquery": "^3.3.1"

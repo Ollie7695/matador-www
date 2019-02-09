@@ -45,6 +45,7 @@ $button-radius:						28px;
 
 @import "foundation-sites/scss/foundation";
 
+
 $header-color: $primary-color;
 
 @include foundation-everything;
@@ -96,3 +97,14 @@ img {
 
 @import "pages/index";
 @import "pages/legal";
+
+.flickity-viewport {
+	position: relative;
+	cursor: grab;
+}
+
+.flickity-slider {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
