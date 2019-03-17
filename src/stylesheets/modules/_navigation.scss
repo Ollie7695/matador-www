@@ -1,0 +1,43 @@
+.scroll-disabled {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.navigation {
+	position: fixed;
+	transform: translateY(-100%);
+	background-color: $primary-color;
+	@include flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	top: 0;
+	nav {
+		max-width: 500px;
+		width: 100%;
+		a {
+			display: block;
+			color: white;
+		}
+	}
+
+	h3, h5 {
+		transition: opacity .15s ease-in-out;
+		color: white;
+		&:hover {
+			opacity: .4;
+		}
+	}
+
+	.social {
+		margin-top: rem-calc(60);
+		justify-content: center;
+		@include flex;
+		a {
+			margin: 0 .3rem;
+		}
+	}
+}

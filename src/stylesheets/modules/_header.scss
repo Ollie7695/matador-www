@@ -1,7 +1,7 @@
 .header {
 	padding: rem-calc(20) 0 0;
 	position: relative;
-	z-index: 3;
+	z-index: 10;
 	.grid-container {
 		@include flex;
 		justify-content: space-between;
@@ -24,6 +24,27 @@
 			svg {
 				margin-right: .3rem;
 			}
+		}
+	}
+
+	.hamburger {
+		outline: none;
+		@include flex;
+		.hamburger-inner,
+		.hamburger-inner:before,
+		.hamburger-inner:after {
+			background-color: $primary-color;
+		}
+		&.is-active {
+			.hamburger-inner,
+			.hamburger-inner:before,
+			.hamburger-inner:after {
+				background-color: white;
+			}
+		}
+
+		@include breakpoint(medium up) {
+			display: none;
 		}
 	}
 

@@ -17,9 +17,7 @@ TweenMax.staggerFromTo(
 
 var flkty = new Flickity( '.mobile-features', {
 	prevNextButtons: false,
-	pageDots: false,
-	// adaptiveHeight: true,
-	// cellAlign: 'left'
+	pageDots: false
 });
 
 $(document).foundation();
@@ -48,4 +46,26 @@ if (document.querySelector('.scrolling-nav')) {
 		value = $(window).scrollTop();
 		progressBar.attr('value', value);
 	});
+}
+
+document.getElementById('nav').onclick = function() {
+	var className = '' + nav.className + '';
+	var d = document.getElementById('navigation');
+	var body = document.getElementsByTagName("body")[0];
+
+	if ( ~className.indexOf(' is-active') ) {
+		this.className = className.replace(' is-active', '');
+		d.classList.add = d.className.replace(' is-active', '');
+		TweenLite.to(".header nav a", .1, {color: "#004DFF", ease: Power3.easeInOut});
+		TweenLite.to(".header svg", .1, {color: "#004DFF", ease: Power3.easeInOut});
+		body.classList.remove('scroll-disabled');
+		TweenLite.to(".navigation", .8, {y: "-100%", ease: Power4.easeInOut});
+	} else {
+		this.className += ' is-active';
+		d.classList.add = "navigation is-active";
+		body.classList.add('scroll-disabled');
+		TweenLite.to(".header nav a", .1, {color: "#fff", ease: Power3.easeInOut});
+		TweenLite.to(".header svg", .5, {color: "#fff", ease: Power3.easeInOut});
+		TweenLite.to(".navigation", .8, {y: "0%", ease: Power4.easeInOut});
+	}
 }

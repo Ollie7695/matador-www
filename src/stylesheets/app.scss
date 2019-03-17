@@ -34,7 +34,16 @@ $header-styles: (
 	)
 );
 
+$hamburger-padding-x: 				0;
+$hamburger-padding-y: 				$hamburger-padding-x;
+$hamburger-layer-width: 			24px;
+$hamburger-layer-height: 			2px;
+$hamburger-layer-spacing: 			4px;
+$hamburger-layer-border-radius:		0;
+
 $button-radius:						28px;
+
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
 @import "mixins/fonts";
 
@@ -96,6 +105,7 @@ img {
 @import "modules/reveal";
 @import "modules/padding";
 @import "modules/scrolling-nav";
+@import "modules/navigation";
 
 @import "pages/index";
 @import "pages/legal";
