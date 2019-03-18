@@ -4,6 +4,14 @@
 	font-weight: bold;
 	outline: none;
 	border: none;
+	color: white !important;
+	&.is-medium {
+		font-size: 1rem;
+		padding: rem-calc(14) rem-calc(30px);
+		box-shadow: 0 5px 12px rgba($primary-color, .15);
+		border-radius: $button-radius * 2;
+	}
+
 	&.is-large {
 		font-size: 1rem;
 		text-transform: uppercase;

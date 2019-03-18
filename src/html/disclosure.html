@@ -1,27 +1,43 @@
 {% extends 'layouts/application.html' %}
 {% set title = "The Fine Print • Matador" %}
+{% set bodyClass = "is-offset" %}
+
+{% block header %}
+<header class="header">
+	<div class="grid-container">
+		<a href="/index.html" title="Matador" class="logo is-dark">Matador</a>
+
+		{% include "shared/header-links.html" %}
+	</div>
+</header>
+
+<div class="header scrolling-nav">
+	<div class="grid-container">
+		<a href="/index.html" title="Matador" class="logo is-dark">Matador</a>
+
+		{% include "shared/header-links.html" %}
+	</div>
+</div>
+
+{% include "shared/navigation.html" %}
+{% endblock %}
 
 {% block content %}
-<div class="masthead">
+<div class="masthead-careers text-center">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-center text-center">
-			<div class="cell small-10 large-12 content">
-				<h1 style="opacity:0">The fine print</h1>
-				<p class="lead" style="opacity:0">By using Matador you agree to these terms &amp; disclosures.</p>
+			<div class="cell small-10 large-8 content">
+				<h2>The fine print</h2>
+				<p class="lead">By using Matador you agree to these terms &amp; disclosures.</p>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="section text-center legal-links">
+<div class="disclosures is-light is-padding-sm text-center legal-links">
 	<div class="container">
 		<div class="row">
 			<div class="column">
-				<br>
-				<br>
-				<h2>Disclosures</h2>
-				<br>
-
 				<ul>
 					<li>
 						<a href="https://s3.amazonaws.com/matador-docs/Apex+Clearing+Annual+Disclosure+Statement+2017.pdf">APEX Annual Disclosure Statement</a>
@@ -111,4 +127,8 @@
 		</div>
 	</div>
 </div>
+{% endblock %}
+
+{% block footer %}
+{% include "shared/footer-simple.html" %}
 {% endblock %}

@@ -1,8 +1,90 @@
 {% extends 'layouts/application.html' %}
 {% set title = "Company • Matador" %}
 
-{% block content %}{% endblock %}
+{% block content %}
+<div class="masthead">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x align-center text-center">
+			<div class="cell small-10 large-7 content">
+				<h2 style="opacity:0">Matador’s mission is to accelerate  all people’s prosperity.</h2>
+				<p class="lead" style="opacity:0">At Matador, we want to help you build relationships around finance with a community you trust, so you can be more effective and knowledgeable in what you’re doing.</p>
+				<p style="opacity:0">For too long, investing has happened in isolation – whether you’re doing it online or through a financial advisor, the experience is overall pretty lonely. We’re starting with the loneliest place in wealth creation and management: the stock market.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="timeline is-light">
+	<div class="is-padding">
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="cell small-10 large-6">
+					<h2>We operate through our shared values and commitments.</h2>
+				</div>
+			</div>
+
+			<div class="grid-x grid-padding-x">
+				<div class="cell small-10 large-6">
+					<br>
+					<h3>Focus on our mission.</h3>
+					<p>As a mission-driven company, we are inspired and motivated to accelerate people’s prosperity.</p>
+
+					<br>
+					<h3>Empower our community and ourselves.</h3>
+					<p>Whether it's making Matador’s products & services better, or helping people advance their investing strategies, we commit to focusing our energy on what’s most empowering for our community.</p>
+
+					<br>
+					<h3>Make it better.</h3>
+					<p>We commit to taking stock of the status quo with curiosity and acumen, and to then bias for action when things need to be improved.</p>
+
+					<br>
+					<h3>Be transparent.</h3>
+					<p>We commit to being as transparent as we can with ourselves, our community, and the industry.</p>
+				</div>
+
+				<div class="cell large-offset-2 large-3">
+					<img src="images/leaves.svg" width="170" draggable="false">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="cell small-10 large-6">
+					<h2>Backed by great investors.</h2>
+				</div>
+			</div>
+
+			<div class="grid-x grid-padding-x">
+				<div class="cell small-10 large-6">
+					<br>
+					<h3>Greycroft</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor erat, ultricies a velit sed, lacinia ultrices ex. Nunc consequat mi a justo ullamcorper sagittis. Suspendisse sed quam tempor, aliquam ligula vel, ultrices mauris</p>
+
+					<br>
+					<h3>Accel</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor erat, ultricies a velit sed, lacinia ultrices ex. Nunc consequat mi a justo ullamcorper sagittis. Suspendisse sed quam tempor, aliquam ligula vel, ultrices mauris</p>
+
+					<br>
+					<h3>Advanceit</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor erat, ultricies a velit sed, lacinia ultrices ex. Nunc consequat mi a justo ullamcorper sagittis. Suspendisse sed quam tempor, aliquam ligula vel, ultrices mauris</p>
+				</div>
+
+				<div class="cell large-offset-2 large-3 jusify-center">
+					<div class="card"></div>
+					<div class="card"></div>
+					<div class="card"></div>
+
+					<img src="images/city.svg" class="city" width="230" draggable="false">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
 
 {% block footer %}
-{% include "shared/footer-simple.html" %}
+{% include "shared/footer-alt.html" %}
 {% endblock %}

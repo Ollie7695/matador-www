@@ -6,7 +6,7 @@ var Flickity = require("flickity");
 import Headroom from "headroom.js";
 
 TweenMax.staggerFromTo(
-	".masthead h1, .masthead p, .masthead a img", 1, {
+	".masthead h1, .masthead h2, .masthead p, .masthead a img", 1, {
 		opacity: 0,
 		y: 100
 	}, {
@@ -15,10 +15,12 @@ TweenMax.staggerFromTo(
 		ease: Power2.easeInOut
 	}, .1);
 
-var flkty = new Flickity( '.mobile-features', {
-	prevNextButtons: false,
-	pageDots: false
-});
+if (document.querySelector('.mobile-features')) {
+	var flkty = new Flickity( '.mobile-features', {
+		prevNextButtons: false,
+		pageDots: false
+	});
+}
 
 $(document).foundation();
 
@@ -48,24 +50,30 @@ if (document.querySelector('.scrolling-nav')) {
 	});
 }
 
-document.getElementById('nav').onclick = function() {
-	var className = '' + nav.className + '';
-	var d = document.getElementById('navigation');
-	var body = document.getElementsByTagName("body")[0];
+$(".nav").on('click', function(){
+ //    var className = '' + nav.className + '';
+	// var d = document.getElementById('navigation');
+	// var body = document.getElementsByTagName("body")[0];
 
-	if ( ~className.indexOf(' is-active') ) {
-		this.className = className.replace(' is-active', '');
-		d.classList.add = d.className.replace(' is-active', '');
+	if ( $( ".nav" ).is( ".is-active" ) ) {
 		TweenLite.to(".header nav a", .1, {color: "#004DFF", ease: Power3.easeInOut});
 		TweenLite.to(".header svg", .1, {color: "#004DFF", ease: Power3.easeInOut});
-		body.classList.remove('scroll-disabled');
+		TweenLite.to(".header .logo", .1, {background: "url(../images/logo.svg)", ease: Power3.easeInOut});
+		// body.classList.remove('scroll-disabled');
 		TweenLite.to(".navigation", .8, {y: "-100%", ease: Power4.easeInOut});
+
+		$(".header").removeClass("is-active");
+		$(".nav").removeClass("is-active");
 	} else {
-		this.className += ' is-active';
-		d.classList.add = "navigation is-active";
-		body.classList.add('scroll-disabled');
+		// body.classList.add('scroll-disabled');
+
+		$(".header").addClass("is-active");
+		$(".nav").addClass("is-active");
+
+		TweenLite.to(".header .logo", .1, {background: "url(../images/logo-light.svg)", ease: Power3.easeInOut});
 		TweenLite.to(".header nav a", .1, {color: "#fff", ease: Power3.easeInOut});
 		TweenLite.to(".header svg", .5, {color: "#fff", ease: Power3.easeInOut});
 		TweenLite.to(".navigation", .8, {y: "0%", ease: Power4.easeInOut});
 	}
-}
+});
+

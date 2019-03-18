@@ -1,0 +1,32 @@
+.masthead-careers {
+	background-color: white;
+	background-image: url("../images/masthead-top.svg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100%;
+	padding: rem-calc(150px) 0 0;
+	@include breakpoint(medium up) {
+		padding: rem-calc(200px) 0 rem-calc(50px);
+	}
+	@include breakpoint(large up) {
+		padding: rem-calc(300px) 0 0;
+	}
+}
+
+
+.jobs {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			padding-bottom: rem-calc(20);
+			@include breakpoint(medium up) {
+				padding-bottom: rem-calc(40);
+			}
+			h5 {
+				color: #999BA5;
+			}
+		}
+	}
+}

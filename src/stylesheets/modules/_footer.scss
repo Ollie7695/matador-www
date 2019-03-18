@@ -1,13 +1,24 @@
 .footer {
+	background-image: url("../images/footer-top.svg");
+	background-position: top center;
+	background-repeat: no-repeat;
 	background-color: $color-lightest;
 	padding: rem-calc(120) 0 rem-calc(20);
-	margin-top: rem-calc(180);
 	position: relative;
 	p:not(.is-normal), a {
 		line-height: rem-calc(18);
 		font-size: rem-calc(12);
 		color: $color-text;
 		margin: 0;
+	}
+
+	&.is-full {
+		padding-top: rem-calc(100) !important;
+		margin-top: rem-calc(200);
+		background-image: none;
+		@include breakpoint(large up) {
+			margin-top: rem-calc(150);
+		}
 	}
 
 	p.lead {
@@ -124,8 +135,19 @@
 		}
 	}
 
+	.about {
+		margin-bottom: 6rem;
+		p.lead {
+			margin-bottom: 1rem;
+		}
+
+		.button {
+			margin-top: 1rem;
+		}
+	}
+
 	@include breakpoint(medium up) {
-		padding: rem-calc(100) 0;
+		padding: rem-calc(200) 0 rem-calc(100);
 		.links {
 			padding: rem-calc(100) 0;
 		}
@@ -158,6 +180,7 @@
 	}
 
 	@include breakpoint(large up) {
+		padding: rem-calc(300) 0 rem-calc(100);
 		.card.is-wire {
 			margin-bottom: 0;
 			height: 100%;

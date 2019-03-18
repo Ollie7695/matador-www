@@ -1,55 +1,17 @@
 <header class="header">
 	<div class="grid-container">
-		<a href="/index.html" class="logo">
-			<img src="images/logo.svg" alt="Matador" draggable="false">
-		</a>
+		<a href="/index.html" title="Matador" class="logo is-dark">Matador</a>
 
-		<nav>
-			<a href="/company.html"><svg width="14" height="14"><use xlink:href="images/icons.svg#download"></use></svg> Company</a>
-			<a href="https://help.matadorapp.com" target="_blank"><svg width="16" height="16"><use xlink:href="images/icons.svg#faq"></use></svg> FAQs</a>
-		</nav>
-
-		<button id="nav" class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
+		{% include "shared/header-links.html" %}
 	</div>
 </header>
 
-<div id="navigation" class="navigation text-center">
-	<nav class="nav">
-		<a href="#" title=""><h5>Company</h5></a>
-		<a href="#" title=""><h5>Careers</h5></a>
-		<a href="#" title=""><h5>FAQs</h5></a>
-		<a href="#" title=""><h5>Terms of Use</h5></a>
-		<a href="#" title=""><h5>Privacy</h5></a>
-		<a href="#" title=""><h5>Contact Us</h5></a>
-	</nav>
+<div class="header scrolling-nav">
+	<div class="grid-container">
+		<a href="/index.html" title="Matador" class="logo is-dark">Matador</a>
 
-	<nav class="social">
-		<a href="https://www.instagram.com/matadorapp" title="Matador on Instagram" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#instagram"></use></svg>
-		</a>
-
-		<a href="https://www.facebook.com/MatadorApp" title="Matador on Facebook" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#facebook"></use></svg>
-		</a>
-
-		<a href="https://twitter.com/matadorapp" title="Matador on Twitter" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#twitter"></use></svg>
-		</a>
-
-		<a href="https://www.linkedin.com/company/matador-app" title="Matador on LinkedIn" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#linkedin"></use></svg>
-		</a>
-
-		<a href="https://angel.co/matadorapp" title="Matador on AngelList" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#angellist"></use></svg>
-		</a>
-
-		<a href="mailto:hello@matadorapp.com" title="Email Matador" target="_blank">
-			<svg width="24" height="24"><use xlink:href="images/icons.svg#mail"></use></svg>
-		</a>
-	</nav>
+		{% include "shared/header-links.html" %}
+	</div>
 </div>
+
+{% include "shared/navigation.html" %}

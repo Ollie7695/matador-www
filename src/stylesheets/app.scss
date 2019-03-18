@@ -84,6 +84,9 @@ body {
 	color: $color-text-dark;
 	overflow-x: hidden;
 	font-size: 1rem;
+	&.is-offset {
+		background-color: #F9FAFC;
+	}
 }
 
 .wrapper {
@@ -109,6 +112,8 @@ img {
 
 @import "pages/index";
 @import "pages/legal";
+@import "pages/careers";
+@import "pages/about";
 
 .flickity-viewport {
 	position: relative;

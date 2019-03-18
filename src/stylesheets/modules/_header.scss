@@ -2,14 +2,25 @@
 	padding: rem-calc(20) 0 0;
 	position: relative;
 	z-index: 10;
+	&.is-offset {
+		background-color: #F9FAFC;
+	}
+	
 	.grid-container {
 		@include flex;
 		justify-content: space-between;
+		width: 100%;
 	}
 
 	.logo {
-		img {
-			height: 18px;
+		width: 97px;
+		height: 18px;
+		text-indent: -9999px;
+		background-image: url("../images/logo.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		&.is-light {
+			background-image: url("../images/logo-light.svg");
 		}
 	}
 
@@ -18,7 +29,7 @@
 		display: none;
 
 		a {
-			margin-left: rem-calc(40);
+			margin-left: rem-calc(20);
 			display: inline-flex;
 			align-items: center;
 			svg {
@@ -58,6 +69,14 @@
 
 		nav {
 			display: flex;
+		}
+	}
+
+	@include breakpoint(large up) {
+		nav {
+			a {
+				margin-left: rem-calc(40);
+			}
 		}
 	}
 }
