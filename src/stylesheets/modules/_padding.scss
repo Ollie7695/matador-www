@@ -3,10 +3,16 @@
 	&.is-bottom {
 		padding-top: 0;
 	}
+	&.is-top {
+		padding-bottom: 0;
+	}
 	.is-padding-sm {
 		padding: 2rem 0;
 		&.is-bottom {
 			padding-top: 0;
+		}
+		&.is-top {
+			padding-bottom: 0;
 		}
 	}
 }
@@ -17,12 +23,18 @@
 		&.is-bottom {
 			padding-top: 0;
 		}
+		&.is-top {
+			padding-bottom: 0;
+		}
 	}
 
 	.is-padding-sm {
 		padding: 4rem 0;
 		&.is-bottom {
 			padding-top: 0;
+		}
+		&.is-top {
+			padding-bottom: 0;
 		}
 	}
 }
@@ -33,12 +45,18 @@
 		&.is-bottom {
 			padding-top: 0;
 		}
+		&.is-top {
+			padding-bottom: 0;
+		}
 	}
 
 	.is-padding-sm {
 		padding: 6rem 0;
 		&.is-bottom {
 			padding-top: 0;
+		}
+		&.is-top {
+			padding-bottom: 0;
 		}
 	}
 }
