@@ -22,6 +22,24 @@ if (document.querySelector('.mobile-features')) {
 	});
 }
 
+if (document.querySelector('.mobile-investors')) {
+	var flkty = new Flickity( '.mobile-investors', {
+		prevNextButtons: false,
+		pageDots: false,
+		adaptiveHeight: true,
+		cellAlign: 'left'
+	});
+}
+
+if (document.querySelector('.mobile-values')) {
+	var flkty = new Flickity( '.mobile-values', {
+		prevNextButtons: false,
+		pageDots: false,
+		adaptiveHeight: true,
+		cellAlign: 'left'
+	});
+}
+
 $(document).foundation();
 
 if (document.querySelector('.scrolling-nav')) {
