@@ -81,7 +81,7 @@
 	p {
 		line-height: rem-calc(24);
 		font-size: rem-calc(16);
-		margin: 0;
+		margin: rem-calc(10) 0 0;
 	}
 
 	@include breakpoint(medium up) {
@@ -100,7 +100,6 @@
 		p {
 			font-size: rem-calc(14);
 			line-height: rem-calc(18);
-			margin: 0;
 		}
 
 		img {
