@@ -1,5 +1,9 @@
 .timeline {
+	position: relative;
+	z-index: 1;
+
 	h3 {
+		font-size: rem-calc(22);
 		color: #34374C;
 	}
 
@@ -47,12 +51,44 @@
 			margin-left: -20px;
 		}
 		&:before {
-			height: calc(100% + 10rem);
+			height: calc(100% + 15rem);
 			margin-top: 40px;
 		}
 	}
 
 	.city {
-		margin-top: 4rem;
+		padding-top: 2rem;
+	}
+
+	@include breakpoint(small down) {
+		.investors-wrap {
+			padding-top: 50px;
+			padding-bottom: 100px;
+		}
+
+		.card {
+			padding-top: rem-calc(20);
+			padding-bottom: rem-calc(20);
+			min-height: 100%;
+			.card-section {
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+
+	@include breakpoint(large up) {
+		.city-wrap {
+			&:before {
+				height: calc(100% + 15rem);
+			}
+		}
+
+		.city {
+			padding-top: 10rem;
+			margin-bottom: rem-calc(-250px);
+		}
 	}
 }
