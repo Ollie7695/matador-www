@@ -76,7 +76,7 @@ $(".nav").on('click', function(){
 	if ( $( ".nav" ).is( ".is-active" ) ) {
 		TweenLite.to(".header nav a", .1, {color: "#004DFF", ease: Power3.easeInOut});
 		TweenLite.to(".header svg", .1, {color: "#004DFF", ease: Power3.easeInOut});
-		TweenLite.to(".header .logo", .1, {background: "url(../images/logo.svg)", ease: Power3.easeInOut});
+		TweenLite.to(".header .logo", .1, {background: "url(images/logo.svg)", ease: Power3.easeInOut});
 		// body.classList.remove('scroll-disabled');
 		TweenLite.to(".navigation", .8, {y: "-100%", ease: Power4.easeInOut});
 
@@ -88,7 +88,7 @@ $(".nav").on('click', function(){
 		$(".header").addClass("is-active");
 		$(".nav").addClass("is-active");
 
-		TweenLite.to(".header .logo", .1, {background: "url(../images/logo-light.svg)", ease: Power3.easeInOut});
+		TweenLite.to(".header .logo", .1, {background: "url(images/logo-light.svg)", ease: Power3.easeInOut});
 		TweenLite.to(".header nav a", .1, {color: "#fff", ease: Power3.easeInOut});
 		TweenLite.to(".header svg", .5, {color: "#fff", ease: Power3.easeInOut});
 		TweenLite.to(".navigation", .8, {y: "0%", ease: Power4.easeInOut});
