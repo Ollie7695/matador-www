@@ -136,8 +136,14 @@
 		p, a {
 			color: rgba($color-text, .6);
 		}
+
 		p {
 			margin: 0 0 1rem;
+		}
+
+		.disclosures {
+			color: $primary-color;
+			font-weight: 600;
 		}
 	}
 
