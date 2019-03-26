@@ -20,6 +20,7 @@
   "fonts/GraphikCompact-Regular.woff": "fonts/GraphikCompact-Regular-7185308736.woff",
   "fonts/GraphikCompact-Regular.woff2": "fonts/GraphikCompact-Regular-36a950f54e.woff2",
   "images/accel.svg": "images/accel-fd22ee803b.svg",
+  "images/advancit.png": "images/advancit-1cf767f711.png",
   "images/appstore.svg": "images/appstore-dbcc0f4963.svg",
   "images/city.svg": "images/city-f805e30f7f.svg",
   "images/easy.svg": "images/easy-6f359a3fa8.svg",
@@ -45,7 +46,6 @@
   "images/masthead-top.svg": "images/masthead-top-70e74ba410.svg",
   "images/mockup-flat.png": "images/mockup-flat-47aed22112.png",
   "images/secure.svg": "images/secure-eccb392dfb.svg",
-  "images/thinking-capital.png": "images/thinking-capital-b0e370b2c2.png",
   "javascripts/app.js": "javascripts/app-b25733c639492db91369.js",
   "stylesheets/app.css": "stylesheets/app-2fc420c4b0.css"
 }
