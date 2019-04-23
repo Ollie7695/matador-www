@@ -1,0 +1,92 @@
+{% extends 'layouts/application.html' %}
+{% set title = "Earn 2.5% interest on your cash • Matador" %}
+
+{% block content %}
+<div class="masthead">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x align-center align-middle">
+			<div class="cell small-10 large-6 content">
+				<h1 style="opacity:0">Earn 2.5% interest on your cash.</h1>
+				<p class="lead has-padding-right" style="opacity:0">Matador is a simple place to grow your money. From one account, earn a baseline 2.5% interest on your cash, or invest your money in the stock market.</p>
+
+				<a href="https://itunes.apple.com/us/app/matador-stock-trading/id1204112719?mt=8">
+					<img src="../images/appstore.svg" draggable="false" style="opacity:0">
+				</a>
+			</div>
+
+			<div class="cell small-12 medium-7 large-6">
+				<img src="../images/hero-notification-lg.png" class="today show-for-small-only" draggable="false">
+				<div class="feed-wrapper">
+					<img src="../images/hero-home-invest-lg.png" class="feed show-for-small-only" draggable="false">
+				</div>
+
+				<img src="../images/hero-home-invest-lg.png" class="today hide-for-small-only" draggable="false">
+				<img src="../images/hero-notification-lg.png" class="feed hide-for-small-only" draggable="false">
+
+				<img src="../images/masthead-decor.svg" class="hide-for-small-only decor" draggable="false">
+				<img src="../images/masthead-stripes.svg" class="hide-for-small-only stripes" draggable="false">
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="timeline is-light">
+	<div class="is-padding">
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="cell small-8 medium-6">
+					<h2>Keep growing your cash in between investments.</h2>
+				</div>
+			</div>
+
+			<div class="mobile-values text-center show-for-small-only">
+				<div class="card">
+					<div class="card-section">
+						<h2>How to get it</h2>
+						<p>Add funds to Matador. Cash balances up to $10,000 will earn 2.5% interest.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-section">
+						<h2>Everything in one account</h2>
+						<p>2.5% interest. Stock-market investing. One account.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-section">
+						<h2>Safe &amp; Secure</h2>
+						<p>We not only meet traditional banking security standards, we exceed them. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-x grid-padding-x hide-for-small-only">
+				<div class="cell small-9 medium-8 large-5">
+					<br>
+					<h3>How to get it</h3>
+					<p>Add funds to Matador. Cash balances up to $10,000 will earn 2.5% interest.</p>
+
+					<br>
+					<h3>Everything in one account</h3>
+					<p>2.5% interest. Stock-market investing. One account.</p>
+
+					<br>
+					<h3>Safe &amp; Secure</h3>
+					<p>We not only meet traditional banking security standards, we exceed them. </p>
+
+					<br>
+					<a href="#">More Interest FAQs</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="../images/timeline.svg" class="timeline-bg" width="100%" draggable="false">
+</section>
+{% endblock %}
+
+{% block footer %}
+{% include "shared/footer-simple.html" %}
+{% endblock %}
