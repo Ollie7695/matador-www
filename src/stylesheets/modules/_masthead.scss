@@ -49,6 +49,10 @@
 		top: -14rem;
 	}
 
+	.content {
+		z-index: 2;
+	}
+
 	.mobile-mockup {
 		margin-top: rem-calc(80);
 		max-width: 350px;

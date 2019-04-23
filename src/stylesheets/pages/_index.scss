@@ -84,6 +84,11 @@
 		margin: rem-calc(10) 0 0;
 	}
 
+	a {
+		text-decoration: underline;
+		color: inherit;
+	}
+
 	@include breakpoint(medium up) {
 		margin-top: rem-calc(-60);
 		position: relative;
